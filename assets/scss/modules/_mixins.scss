@@ -1,0 +1,11 @@
+@function em($px, $base: $base__font--size) {
+  @return ($px / $base) * 1em;
+}
+
+@mixin text($size, $line, $margin: 0, $family: $text__family--sans, $color: $text__color--base, $weight: normal) {
+  font-size: em($size);
+  line-height: ($line / $size);
+  font-family: $family;
+  color: $color;
+  margin-bottom: em($margin, $size);
+}

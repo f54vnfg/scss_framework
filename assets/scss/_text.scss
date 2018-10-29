@@ -1,0 +1,6 @@
+
+
+
+h1 {
+  @include text($base__font--size, $base__line, $text__color--base, $weight: bold);
+}
